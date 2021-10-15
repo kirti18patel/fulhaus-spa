@@ -1,7 +1,7 @@
 # Fulhaus Shop
 Fulhaus Shop is a single page application developed using React and Redux.
 
-![badge](https://img.shields.io/badge/licence-MIT-green) ![badge](https://img.shields.io/badge/-HTML-red) ![badge](https://img.shields.io/badge/-CSS-red) ![badge](https://img.shields.io/badge/-Javascript-red) ![badge](https://img.shields.io/badge/-Node.js-red) ![badge](https://img.shields.io/badge/-React-red) ![badge](https://img.shields.io/badge/-Axios-red)
+![badge](https://img.shields.io/badge/licence-MIT-green) ![badge](https://img.shields.io/badge/-HTML-red) ![badge](https://img.shields.io/badge/-CSS-red) ![badge](https://img.shields.io/badge/-Javascript-red) ![badge](https://img.shields.io/badge/-Node.js-red) ![badge](https://img.shields.io/badge/-React-red) ![badge](https://img.shields.io/badge/-Axios-red) ![badge](https://img.shields.io/badge/-Redux-red)
 
 ## 📜 Description 
 

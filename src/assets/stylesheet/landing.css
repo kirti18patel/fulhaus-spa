@@ -31,3 +31,20 @@
     text-align: center;
     color: var(--white);
 }
+
+
+@media screen and (max-width: 640px) {
+    .landing{
+        height: 40vh;
+    }
+    .hero{
+        height: 100%;
+    }
+    .cta{
+        padding: 1% 0%;
+        height: 30%;
+    }
+    .cta_text{
+        font-size: 2rem;
+    }
+}

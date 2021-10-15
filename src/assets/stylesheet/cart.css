@@ -64,3 +64,22 @@
     font-weight: 500;
     cursor: pointer; 
 }
+
+@media screen and (max-width: 640px) {
+    .cart_drawer{
+        top: 7%;
+        width: 65%;
+    }
+    .cart_item_details{
+        font-size: 0.7rem;
+        padding: 3%;
+    }
+    .close_btn,
+    .cart_item_title{
+        font-size: 0.6rem;
+    }
+    .checkout_btn,
+    .checkout{
+        font-size: 0.9rem;
+    }
+}

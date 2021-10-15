@@ -54,3 +54,16 @@
     font-size: 1.4rem;
     cursor: pointer;
 }
+
+@media screen and (max-width: 640px) {
+    .overlay{
+        font-size: 0.6rem;
+        padding: 10%;
+    }
+    .add_btn{
+        font-size: 0.6rem;
+    }
+    .item_brand{
+        display: none;
+    }
+}

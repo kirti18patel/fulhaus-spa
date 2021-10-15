@@ -29,7 +29,7 @@ function Cart() {
                     />
                   </div>
                   <div className="cart_item_details flex_spaceArround flex_column" key={`itemName${i}`}>
-                    <div className="item_title">
+                    <div className="cart_item_title">
                       <h2>{item.product_name}</h2>
                       <h4>{item.brand_name}</h4>
                     </div>
