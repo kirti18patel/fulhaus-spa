@@ -10,7 +10,7 @@ function Cart() {
   const totalPrice = () => {
     let total = 0;
     itemList.forEach(item => {
-      total+= (parseInt(item.price))
+      total+= (parseFloat(item.price))
     });
     return total
   }
