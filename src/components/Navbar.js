@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import "../assets/stylesheet/navbar.css"
+import Cart from './Cart';
 
 function Navbar() {
     
@@ -13,6 +14,7 @@ function Navbar() {
             setShowCart(!showCart);
         }}>Cart</button>
     </nav>
+    {showCart ? <Cart/>:null}
     </>
     )
 }
