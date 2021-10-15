@@ -28,7 +28,7 @@ npm install
 
 Start the server using the following command
 ``` 
-npm run
+npm start
 ``` 
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser using below command.
