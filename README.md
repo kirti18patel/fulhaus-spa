@@ -35,7 +35,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser us
 
 ## 🌐 Deployed Application Link 
 
-[**Click Here**]() to view the deployed application. 
+[**Click Here**](https://fulhaus-shop-kirti-patel.herokuapp.com/) to view the deployed application. 
 
 
 ## ▶️ Final Output 
