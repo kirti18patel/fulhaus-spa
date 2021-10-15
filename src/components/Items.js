@@ -1,50 +1,50 @@
 import React, {useState} from 'react'
+import {useDispatch} from "react-redux"
+import { addItem } from '../actions'
 import "../assets/stylesheet/items.css"
 
 function Items() {
     
   const [items] = useState([
     {
-      product_name:"Product Name",
+      product_name:"Product Name 1",
       brand_name: "BRAND NAME",
-      price: "$900",
+      price: "900",
       description: "table"
     },
     {
-      product_name:"Product Name",
+      product_name:"Product Name 2",
       brand_name: "BRAND NAME",
-      price: "$900",
+      price: "900",
       description: "table"
     },
     {
-      product_name:"Product Name",
+      product_name:"Product Name 3",
       brand_name: "BRAND NAME",
-      price: "$900",
+      price: "900",
       description: "table"
     },
     {
-      product_name:"Product Name",
+      product_name:"Product Name 4",
       brand_name: "BRAND NAME",
-      price: "$900",
+      price: "900",
       description: "table"
     },
     {
-      product_name:"Product Name",
+      product_name:"Product Name 5",
       brand_name: "BRAND NAME",
-      price: "$900",
+      price: "900",
       description: "table"
     },
     {
-      product_name:"Product Name",
+      product_name:"Product Name 6",
       brand_name: "BRAND NAME",
-      price: "$900",
+      price: "900",
       description: "table"
     }
-  ]);
-
-  const addItem = i => {
-    console.log(`add cart clicked ${i}`);
-  }
+  ]);  
+  const [cartItems, setCartItems] = useState([]);
+  const dispatch = useDispatch();
 
     return (
         <section className="items">
@@ -62,8 +62,17 @@ function Items() {
                     <h4 className="item_brand">{item.brand_name}</h4>
                   </div>
                   <div className="item_buy_price">
-                    <button className="add_btn" onClick={() => addItem(i)}>+ Add to cart</button>
-                    <h4 className="item_price">{item.price}</h4>
+                    <button className="add_btn" onClick={()=> {
+                      setCartItems({
+                        product_name:item.product_name,
+                        brand_name: item.brand_name,
+                        price: item.price,
+                        description: item.description
+                      });
+                      dispatch(addItem(cartItems))
+                      }}>
+                        + Add to cart</button>
+                    <h4 className="item_price">${item.price}</h4>
                   </div>
                 </div>
               </div>

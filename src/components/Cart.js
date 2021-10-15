@@ -1,40 +1,24 @@
-import React, {useState} from 'react'
+import React from 'react'
+import {useSelector, useDispatch} from "react-redux"
+import { removeItem } from '../actions'
 import "../assets/stylesheet/cart.css"
 
 function Cart() {
-        
-  const [items] = useState([
-    {
-      product_name:"Product Name",
-      brand_name: "BRAND NAME",
-      price: "$900",
-      description: "table"
-    },
-    {
-      product_name:"Product Name",
-      brand_name: "BRAND NAME",
-      price: "$900",
-      description: "table"
-    },
-    {
-      product_name:"Product Name",
-      brand_name: "BRAND NAME",
-      price: "$900",
-      description: "table"
-    },
-    {
-      product_name:"Product Name",
-      brand_name: "BRAND NAME",
-      price: "$900",
-      description: "table"
-    }
-  ]);
+  const dispatch = useDispatch();
+  const itemList = useSelector((state)=> state.itemReducer.itemList);
 
+  const totalPrice = () => {
+    let total = 0;
+    itemList.forEach(item => {
+      total+= parseInt(item.price)
+    });
+    return total
+  }
     return (
         <div className="cart_drawer">
             <div className="cart_items">
-              {items.length ?
-              items.map((item, i) => (
+              {itemList.length ?
+              itemList.map((item, i) => (
                 <div className="cart_item" key={i}>
                   <div className="cart_item_image_container">
                     <img
@@ -50,11 +34,13 @@ function Cart() {
                       <h4>{item.brand_name}</h4>
                     </div>
                     <div>
-                      <h4>{item.price}</h4>
+                      <h4>${item.price}</h4>
                     </div>
                   </div>
                   <div className="close">
-                    <p><i class="fa fa-times" aria-hidden="true"></i></p>
+                    <button className="close_btn" onClick={()=> {
+                      dispatch(removeItem(i))
+                      }}><i class="fa fa-times" aria-hidden="true"></i></button>
                   </div>
                 </div>
               )) : <h1>Add items to cart</h1> }
@@ -63,7 +49,7 @@ function Cart() {
             <div className="checkout">
               <div className="total">
                 <h3>Total:</h3>
-                <h3>$1800</h3>
+                <h3>{`$${totalPrice()}`}</h3>
               </div>
               <button className="checkout_btn">Checkout</button>
             </div>
