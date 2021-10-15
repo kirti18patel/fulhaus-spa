@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Fulhaus Shop
+Fulhaus Shop is a single page application developed using React and Redux.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![badge](https://img.shields.io/badge/licence-MIT-green) ![badge](https://img.shields.io/badge/-HTML-red) ![badge](https://img.shields.io/badge/-CSS-red) ![badge](https://img.shields.io/badge/-Javascript-red) ![badge](https://img.shields.io/badge/-Node.js-red) ![badge](https://img.shields.io/badge/-React-red)
 
-## Available Scripts
+## 📜 Description 
 
-In the project directory, you can run:
+A Fulhaus shop is a web application which allows user to add and item in their e-cart. User can also delete the item from cart later if does not want to buy.
 
-### `yarn start`
+## 📋 Table Of Contents 
+- [Installation](#%EF%B8%8F-installation)
+- [Usage](#%EF%B8%8F-usage) 
+- [Demo App Link](#-deployed-application-link) 
+- [Final Output](#%EF%B8%8F-final-output) 
+- [License](#-license) 
+- [Contributing](#-contributing) 
+- [Credits](#credits) 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## ⚙️ Installation 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+If you would like to try this application or want to use this as a demo, please clone the repo, and run the following command 
 
-### `yarn test`
+``` 
+npm install
+``` 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🖥️ Usage 
 
-### `yarn build`
+Start the server using the following command
+``` 
+npm run
+``` 
+Runs the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser using below command.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🌐 Deployed Application Link 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[**Click Here**]() to view the deployed application. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ▶️ Final Output 
+![alt preview1](/src/assets/images/preiew/image1.png)
+![alt preview2](/src/assets/images/preiew/image2.png)
+![alt preview3](/src/assets/images/preiew/image3.png)
 
-### `yarn eject`
+## 📝 License 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This application is covered under the [MIT](https://choosealicense.com/licenses/mit/) license. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🤝 Contributing 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Contributions, issues and feature requests are welcome. Feel free to check issues page if you want to contribute. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Credits 
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Created By:
+ * [Kirti Patel](https://github.com/kirti18patel)
