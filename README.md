@@ -38,9 +38,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser us
 [**Click Here**]() to view the deployed application. 
 
 ## ▶️ Final Output 
-![alt preview1](./src/assets/images/preiew/image1.png)
-![alt preview2](/src/assets/images/preiew/image2.png)
-![alt preview3](/src/assets/images/preiew/image3.png)
+![alt preview1](/src/assets/images/preview/image1.png)
+![alt preview2](/src/assets/images/preview/image2.png)
+![alt preview3](/src/assets/images/preview/image3.png)
 
 ## 📝 License 
 
