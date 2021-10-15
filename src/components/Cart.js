@@ -15,11 +15,11 @@ function Cart() {
     return total
   }
     return (
-        <div className="cart_drawer">
+        <div className="cart_drawer flex_center_spaceBetween flex_column">
             <div className="cart_items">
               {itemList.length ?
               itemList.map((item, i) => (
-                <div className="cart_item" key={i}>
+                <div className="cart_item flex_spaceBetween" key={i}>
                   <div className="cart_item_image_container">
                     <img
                       src={require(`../assets/images/${i+1}.jpg`).default}
@@ -28,7 +28,7 @@ function Cart() {
                       key={`img${i}`}
                     />
                   </div>
-                  <div className="cart_item_details" key={`itemName${i}`}>
+                  <div className="cart_item_details flex_spaceArround flex_column" key={`itemName${i}`}>
                     <div className="item_title">
                       <h2>{item.product_name}</h2>
                       <h4>{item.brand_name}</h4>
@@ -46,8 +46,8 @@ function Cart() {
               )) : <h1>Add items to cart</h1> }
             </div>
 
-            <div className="checkout">
-              <div className="total">
+            <div className="checkout flex_spaceBetween flex_column">
+              <div className="total flex_center_spaceBetween">
                 <h3>Total:</h3>
                 <h3>{`$${totalPrice()}`}</h3>
               </div>

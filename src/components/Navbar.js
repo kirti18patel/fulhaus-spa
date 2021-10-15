@@ -8,7 +8,7 @@ function Navbar() {
   
     return ( 
     <>       
-    <nav className="navbar">
+    <nav className="navbar flex_center_spaceBetween">
         <h1 className="logo">F&uuml;lhaus Shop</h1>
         <button className="btn_cart" onClick = {() => {
             setShowCart(!showCart);

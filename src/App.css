@@ -19,3 +19,29 @@ body{
   background: var(--canvas);
   overflow-x: hidden;
 }
+
+.flex_center_spaceBetween{    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex_center_spaceArround{    
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex_spaceBetween{    
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex_column{  
+  flex-direction: column;
+}
+
+.flex_spaceArround{
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,9 +1,6 @@
 /* items */
 .items{
     padding: 3% 1%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
     position: relative;
     margin: 0 2%;
@@ -38,26 +35,15 @@
     transition: 0.3s;
     opacity: 0;
     padding: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .overlay:hover{
     opacity: 1;
 }
 
-.item_buy_price{
-    display: flex;
-    justify-content: space-between;
-}
-
 .item_title{
     font-family: Crimson Text;
     font-weight: 400;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
 }
 
 .add_btn{

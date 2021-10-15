@@ -47,7 +47,7 @@ function Items() {
   const dispatch = useDispatch();
 
     return (
-        <section className="items">
+        <section className="items flex_center_spaceArround">
             {items.map((item, i) => (
               <div className="item" key={i}>
                 <img
@@ -56,12 +56,12 @@ function Items() {
                   className="item_img"
                   key={`img${i}`}
                 />
-                <div className="overlay" key={`overlay${i}`}>
-                  <div className="item_title">
+                <div className="overlay flex_spaceBetween flex_column" key={`overlay${i}`}>
+                  <div className="item_title flex_spaceBetween flex_column">
                     <h2 className="item_name">{item.product_name}</h2>
                     <h4 className="item_brand">{item.brand_name}</h4>
                   </div>
-                  <div className="item_buy_price">
+                  <div className="flex_spaceBetween">
                     <button className="add_btn" onClick={()=> {
                       setCartItems({
                         product_name:item.product_name,
