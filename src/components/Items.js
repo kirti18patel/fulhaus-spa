@@ -67,7 +67,8 @@ function Items() {
                         product_name:item.product_name,
                         brand_name: item.brand_name,
                         price: item.price,
-                        description: item.description
+                        description: item.description,
+                        id: i
                       });
                       dispatch(addItem(cartItems))
                       }}>

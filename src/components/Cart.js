@@ -22,7 +22,7 @@ function Cart() {
                 <div className="cart_item flex_spaceBetween" key={i}>
                   <div className="cart_item_image_container">
                     <img
-                      src={require(`../assets/images/${i+1}.jpg`).default}
+                      src={require(`../assets/images/${item.id+1}.jpg`).default}
                       alt={item.description}
                       className="cart_item_img"
                       key={`img${i}`}
@@ -40,7 +40,7 @@ function Cart() {
                   <div className="close">
                     <button className="close_btn" onClick={()=> {
                       dispatch(removeItem(i))
-                      }}><i class="fa fa-times" aria-hidden="true"></i></button>
+                      }}><i className="fa fa-times" aria-hidden="true"></i></button>
                   </div>
                 </div>
               )) : <h1>Add items to cart</h1> }
