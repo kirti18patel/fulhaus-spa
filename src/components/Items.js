@@ -43,7 +43,7 @@ function Items() {
                         brand_name: item.color,
                         price: item.MSRP,
                         description: item.vendorItemDescription,
-                        id: i
+                        item_link:item.itemLink
                       })
                     }}>
                         + Add to cart</button>

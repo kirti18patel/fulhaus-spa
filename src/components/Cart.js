@@ -10,7 +10,7 @@ function Cart() {
   const totalPrice = () => {
     let total = 0;
     itemList.forEach(item => {
-      total+= parseInt(item.price)
+      total+= (parseInt(item.price))
     });
     return total
   }
@@ -22,7 +22,7 @@ function Cart() {
                 <div className="cart_item flex_spaceBetween" key={i}>
                   <div className="cart_item_image_container">
                     <img
-                      src={require(`../assets/images/${item.id+1}.jpg`).default}
+                      src={item.item_link}
                       alt={item.description}
                       className="cart_item_img"
                       key={`img${i}`}
