@@ -57,13 +57,16 @@
 
 @media screen and (max-width: 640px) {
     .overlay{
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         padding: 10%;
     }
     .add_btn{
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
-    .item_brand{
-        display: none;
+    .item{
+        width: 45%;
+    }
+    .item_title{
+        font-size: 0.6rem;
     }
 }
