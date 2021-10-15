@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {useDispatch} from "react-redux"
 import { addItem } from '../actions'
 import "../assets/stylesheet/items.css"
@@ -43,8 +43,13 @@ function Items() {
       description: "table"
     }
   ]);  
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState();
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    if(cartItems){
+    dispatch(addItem(cartItems))}
+}, [cartItems, dispatch]);
 
     return (
         <section className="items flex_center_spaceArround">
@@ -69,9 +74,8 @@ function Items() {
                         price: item.price,
                         description: item.description,
                         id: i
-                      });
-                      dispatch(addItem(cartItems))
-                      }}>
+                      })
+                    }}>
                         + Add to cart</button>
                     <h4 className="item_price">${item.price}</h4>
                   </div>
